@@ -1,9 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
-  return <div>
-    <h1>Welcome to the Blog Application</h1>
-  </div>;
+  return (
+    <div className="home">
+      <h1>WELCOME</h1>
+      <h2>TO THE</h2>
+      <h1>BLOG APPLICATION</h1>
+    </div>
+  );
 };
 export default Home;

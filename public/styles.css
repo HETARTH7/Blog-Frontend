@@ -5,3 +5,8 @@
   right: 0px;
   left: 0px;
 }
+.home {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding-top: 15rem;
+}
