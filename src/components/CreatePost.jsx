@@ -15,12 +15,13 @@ const CreatePost = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const blogPost = {
+    const newPost = {
       title: title,
       post: post,
     };
-    console.log(blogPost);
-    axios("http://localhost:5000/add", blogPost)
+    console.log(newPost);
+    axios
+      .post("http://localhost:5000/add", newPost)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };
