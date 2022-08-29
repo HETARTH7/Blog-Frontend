@@ -19,11 +19,13 @@ const CreatePost = () => {
       title: title,
       post: post,
     };
-    console.log(newPost);
     axios
       .post("http://localhost:5000/add", newPost)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
+    setTitle("");
+    setPost("");
+    window.location = "/create";
   };
   return (
     <form onSubmit={onSubmit} className="container">
