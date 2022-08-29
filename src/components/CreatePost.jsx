@@ -25,7 +25,7 @@ const CreatePost = () => {
       .catch((err) => console.log(err));
     setTitle("");
     setPost("");
-    window.location = "/create";
+    window.location = "/view";
   };
   return (
     <form onSubmit={onSubmit} className="container">
